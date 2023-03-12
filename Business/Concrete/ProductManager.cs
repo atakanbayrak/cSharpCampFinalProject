@@ -16,6 +16,11 @@ namespace Business.Concrete
 {
     // Interface' den kalıtım alan manager sınıfının methodları dependency injection ile çağırması.
     // Methodların bazılarında filter expression kullanılarak filtreleme yapıldı.
+
+    //DataResult sınıflarının oluşturulmasının nedeni direkt data,mesaj ve işlem sonucunun değerini doğru bir şekilde
+    //döndürebilmek için tasarlandı. Bu sayede UI kısmında methodlardan generic olarak ayrı veya toplu bir şekilde
+    //bu dönüş elemanları kontrol edilebilir, constantlar düzenlenebilir olmuş oldu. Tekrardan mesaj düzenlemeleri
+    //bool değerlerin tekrarına gidilmedi.
     public class ProductManager : IProductService
     {
         IProductDal _productDal;
