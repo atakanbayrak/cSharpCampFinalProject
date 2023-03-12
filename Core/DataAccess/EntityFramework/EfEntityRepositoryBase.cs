@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace Core.DataAccess.EntityFramework
 {
+    // Bu base class dosyası, data access kısmında kullanılan sınıfların yine aynı methodları implement 
+    // etmesinden ötürü (interface kalıtım) methodların ortak bir temelde oturtulması. Bu toplama
+    // sayesinde kullanıcı istenilen context ve nesne türü kullanmaya belirli kurallar çevresinde zorlanmıştır.
     public class EfEntityRepositoryBase<TEntity,TContext>:IEntityRepository<TEntity>
         where TEntity : class,IEntity,new()
         where TContext : DbContext, new()

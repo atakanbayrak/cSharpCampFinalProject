@@ -8,6 +8,10 @@ using System.Threading.Tasks;
 
 namespace Core.DataAccess
 {
+    // Interfacelerin aynı methodları tekrar etmesinden ötürü performans artışı için
+    // bütün methodların ortak bir expression ifadesinde toplanması. Bu düzenlemeden sonra
+    // bu ve diğer projeler için ayrım gözetmekzisin hazır bir template core repository' miz mevcut.
+
     //Generic Constraint -> Entity Repository içerisindeki T'yi filtreleyip sınırlandırma
     // Generic Repository Design Pattern <T>
     // class : referans tip olabilir.

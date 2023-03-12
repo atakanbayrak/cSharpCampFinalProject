@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 namespace Entities.Concrete
 {
+    // Entity objelerimizden biri, buradaki methodların isimleri context ile
+    // yani veritabanındaki kolon isimleri ile uyum sağlamalı.
     public class Product:IEntity    
     {
         public int ProductId { get; set; }

@@ -6,6 +6,7 @@ using DataAccess.Concrete.InMemory;
 
 namespace ConsoleUI
 {
+    // Programın başlangıç kısmı.
     class Program 
     {
         static void Main(string[] args)

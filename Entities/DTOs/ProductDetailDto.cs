@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Entities.DTOs
 {
+    // DTO klasörü veri tabanında join yapmak için kullanılan yapılardan biri. Entity nesnesi değil
+    // çünkü tek başına bir tablo belirtmiyor.
+    // Bu nedenle DTO ( Data Transformation Object) olarak adlandırılıyor.
     public class ProductDetailDto:IDto
     {
         public int ProductId { get; set; }
